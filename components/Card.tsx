@@ -1,3 +1,5 @@
+'use client';
+
 import {useEffect} from 'react';
 
 export const Card = ({ title, content }: { title: string; content: string }) => {
