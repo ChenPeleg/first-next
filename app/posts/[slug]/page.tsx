@@ -2,6 +2,7 @@ import React  from 'react';
 import {PageProperties} from '@/models/PageProperties';
 import dumplings from '@/assets/images/dumplings.jpg';
 import {Image} from '@/node_modules/next/dist/client/image-component';
+import {Card} from '@/components/Card';
 
 
 export default function PostsPage(props: PageProperties<'/posts/[slug]'>) {
@@ -11,5 +12,8 @@ export default function PostsPage(props: PageProperties<'/posts/[slug]'>) {
         <h1> {postName.slug}  </h1>
         <Image src={dumplings } alt={'dumplings'} priority={true} />
         <p>This is the posts page content.</p>
+        <Card title={ ' Post Card'} content={ 'This is a card component inside the post page.'}>
+
+        </Card>
     </div>);
 }
