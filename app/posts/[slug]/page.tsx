@@ -4,7 +4,7 @@ import {PageProperties} from '@/models/PageProperties';
 
 export default function PostsPage(props: PageProperties<'/posts/[slug]'>) {
     const postName = React.use(props.params);
-    console.log('Posts Page', props.params);
+
 
     return (<div>
         <h1> {postName.slug}  </h1>
