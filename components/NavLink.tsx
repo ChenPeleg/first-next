@@ -8,5 +8,5 @@ export const NavLink = ({
                             children
                         }: { href: string; children: ReactNode }) => {
     const p = usePathname()
-    return (<Link href={href}>{children}</Link>)
+    return (<Link href={href} className={`${p.startsWith(href)} ? 'bg-red-400' : ''`}>{children}</Link>)
 }
