@@ -13,6 +13,6 @@ export const NavLink = ({
     return (<div className={'flex flex-col'}>
         <Link href={href}  >{children}
         </Link>
-        <div className={ ` ${p.startsWith(href) ? ' opacity-90  ' : ' opacity-0'} w-full h-0.5 -mt-0.5 transition-all duration-100 bg-sky-500 ` } ></div>
+        <div className={ ` ${isActive ? ' opacity-90  ' : ' opacity-0'} w-full h-0.5 -mt-0.5 transition-all duration-100 bg-sky-500 ` } ></div>
     </div>)
 }
