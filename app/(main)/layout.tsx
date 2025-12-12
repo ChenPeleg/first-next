@@ -1,5 +1,6 @@
 import React from 'react';
-import MyHeader from '@/app/header';
+import Navbar from '@/components/navbar/AppNavbar';
+import {MainContainer} from '@/containers/MainContainer';
 
 
 export default function PostsLayout({
@@ -8,17 +9,13 @@ export default function PostsLayout({
     children: React.ReactNode;
 }>) {
 
-    return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    return (<MainContainer header={<h1 className="max-w-xs text-black dark:text-zinc-50">
+        <Navbar/>
+    </h1>}>
 
-            <main
-                className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-                <MyHeader/>
-                <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-                    {children}
-                </div>
-            </main>
-        </div>)
+        {children}
+
+    </MainContainer>)
 
 
 }
