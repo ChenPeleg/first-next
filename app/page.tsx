@@ -8,7 +8,7 @@ export default function Home() {
        <Navbar/>
     </h1>}>
 
-        <NavLink href={'about'}>About</NavLink>
+        <NavLink href={'(main)/about'}>About</NavLink>
         <NavLink href={'posts/post-1'}>Post 1 </NavLink>
         <NavLink href={'posts/post-2'}>Post 2</NavLink>
 
