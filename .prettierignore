@@ -1,0 +1,12 @@
+# Ignore artifacts
+/node_modules
+/.next
+/out
+/build
+/dist
+/public
+.DS_Store
+*.log
+.env
+.measurercache
+
