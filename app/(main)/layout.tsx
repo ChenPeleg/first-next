@@ -9,9 +9,9 @@ export default function PostsLayout({
     children: React.ReactNode;
 }>) {
 
-    return (<MainContainer header={<h1 className="max-w-xs text-black dark:text-zinc-50">
+    return (<MainContainer header={<h1 className="max-w-xs text-black dark:text-zinc-50 h-full flex-1">
         <Navbar/>
-    </h1>}>
+        </h1>}>
 
         {children}
 

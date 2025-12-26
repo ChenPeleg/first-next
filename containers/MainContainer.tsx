@@ -4,12 +4,12 @@ import React from 'react';
 export const MainContainer = ({ children ,header }:
                               { children: React.ReactNode , header :React.ReactNode }) => {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+        <div className="flex min-h-screen   bg-zinc-50  ">
             {header}
             <main
-                className="flex min-h-screen w-full h-full flex-row items-center justify-center bg-green-300 gap-10 py-10     dark:bg-black sm:items-start">
+                className= "  flex h-screen w-full dark:bg-black ">
 
-                <section className="flex  max-w-3xl w-full h-full bg-amber-300 flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+                <section className=" w-full h-11/12 mt-10 ">
                     {children}
                 </section>
             </main>
