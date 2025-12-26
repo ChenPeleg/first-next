@@ -3,10 +3,13 @@ import {PageProperties} from '@/models/PageProperties';
 import dumplings from '@/assets/images/dumplings.jpg';
 import {Image} from '@/node_modules/next/dist/client/image-component';
 import {Card} from '@/components/Card';
+import {mealsService} from '@/lib/meals.service';
 
 
 export default function MealsPage(props: PageProperties<'/posts/[slug]'>) {
     const postName = React.use(props.params);
+    const meals = mealsService.getMeals()
+    console.log(meals)
 
     return (<div>
         <h1> {postName.slug}  </h1>
