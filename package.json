@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prepare-db": "node ./db/initdb.ts"
+    "prepare-db": "node ./db/initdb.ts",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "better-sqlite3": "^12.5.0",

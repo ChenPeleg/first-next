@@ -1,11 +1,10 @@
 export interface Meal {
-    id?: number;
-    title: string;
-    slug: string;
-    image: string;
-    summary: string;
-    instructions: string;
-    creator: string;
-    creator_email: string;
+  id?: number;
+  title: string;
+  slug: string;
+  image: string;
+  summary: string;
+  instructions: string;
+  creator: string;
+  creator_email: string;
 }
-
