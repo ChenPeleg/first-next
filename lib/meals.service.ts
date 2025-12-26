@@ -13,6 +13,11 @@ export class MealsService {
     const stmt = this.db.prepare('SELECT * FROM meals');
     return stmt.all() as Meal[];
   }
+
+  getMeal(slug: string): Meal {
+    const stmt = this.db.prepare('SELECT * FROM meals WHERE slug = ?');
+    return stmt.get(slug) as Meal;
+  }
 }
 
 export const mealsService = new MealsService();
