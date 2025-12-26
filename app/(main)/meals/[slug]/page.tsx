@@ -8,7 +8,7 @@ import { mealsService } from '@/lib/meals.service';
 export default function MealsPage(props: PageProperties<'/posts/[slug]'>) {
   const postName = React.use(props.params);
   const meals = mealsService.getMeals();
-  console.log(meals);
+
 
   return (
     <div className={'flex w-full flex-col items-center justify-center mt-20'}>
